@@ -1,0 +1,247 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.boxT {
+    position: relative;
+    margin: 30px auto 0;
+    width: 600px;
+    height: 600px;
+    background: black;
+
+}
+
+.block {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    
+}
+
+.diamond1 {
+    top: 70px;
+    left: 200px;
+    background: rgb(7, 201, 201);
+    border-radius: 20% 90% 20% 10%;
+    transform: rotate(-45deg);
+    z-index: 1;
+}
+
+.diamond2 {
+    bottom: 70px;
+    left: 200px;
+    background: rgb(7, 201, 201);
+    border-radius: 20% 90% 20% 10%;
+    transform: rotate(135deg);
+    z-index: 2;
+}
+
+.diamond3 {
+    /*matched with diamond1 and diamond5*/
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    bottom: 80px;
+    left: 210px;
+    background: rgb(115, 214, 214);
+    border-radius: 20% 90% 20% 10%;
+    transform: rotate(135deg);
+    z-index: 2;
+}
+
+.diamond4 {
+    /*matched with diamond2 and diamond6*/
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    top: 80px;
+    right: 210px;
+    background: rgb(115, 214, 214);
+    border-radius: 20% 90% 20% 10%;
+    transform: rotate(-45deg);
+    z-index: 2;
+}
+
+
+.diamond5 {
+    position: absolute;
+    width: 170px;
+    height: 170px;
+    top: 77px;
+    right: 215px;
+    background: rgb(7, 201, 201);
+    border-radius: 20% 90% 20% 10%;
+    transform: rotate(-45deg);
+    z-index: 2;
+}
+
+.diamond6 {
+    position: absolute;
+    width: 170px;
+    height: 170px;
+    bottom: 91px;
+    left: 215px;
+    background: rgb(7, 201, 201);
+    border-radius: 20% 90% 20% 10%;
+    transform: rotate(135deg);
+    z-index: 2;
+
+}
+
+
+.top {
+    position: absolute;
+    height: 50px;
+    width: 280px;
+    top: 80px;
+    left: 160px;
+    background: rgb(9, 53, 53);
+    border-radius: 0% 0% 50% 50%;
+    z-index: 2;
+}
+
+.topShadow {
+    position: absolute;
+    height: 40px;
+    width: 280px;
+    top: 67px;
+    left: 160px;
+    background: rgb(4, 26, 26);
+    border-radius: 30% 30% 50% 50%;
+    z-index: 3;
+
+}
+
+.bottom {
+    position: absolute;
+    height: 50px;
+    width: 280px;
+    bottom: 47px;
+    left: 160px;
+    background: rgb(9, 53, 53);
+    border-radius: 0% 0% 50% 50%;
+    z-index: 1;
+}
+
+.bottomShadow {
+    position: absolute;
+    height: 35px;
+    width: 280px;
+    bottom: 70px;
+    left: 160px;
+    background: rgb(4, 26, 26);
+    border-radius: 30% 30% 50% 50%;
+    z-index: 1;
+}
+
+.rect1 {
+    position: absolute;
+    top: 80px;
+    left: 160px;
+    height: 435px;
+    width: 10px;
+    background: teal;
+    border-bottom-right-radius: 20px;
+    z-index: 1;
+}
+
+.rect2 {
+    position: absolute;
+    top: 80px;
+    right: 160px;
+    height: 435px;
+    width: 10px;
+    background: teal;
+    border-bottom-left-radius: 20px;
+    z-index: 1;
+}
+
+.sandTop {
+    position: absolute;
+    opacity: 0.2;
+    width: 70px;
+    height: 70px;
+    top: 220px;
+    left: 264px;
+    background: rgb(12, 31, 31);
+    border-radius: 20% 90% 20% 30%;
+    transform: rotate(-45deg);
+    z-index: 2;
+
+}
+
+.sandDrop {
+    position: relative;
+    opacity: 0.1;
+    width: 10px;
+    height: 10px;
+    top: 240px;
+    left: 290px;
+    background:  rgb(34, 83, 83);
+    border-radius: 50%;
+    transform: rotate(-45deg);
+    z-index: 2;
+    animation-name: fade;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    
+}
+
+.sandDrop2 {
+    position: relative;
+    opacity: 0.1;
+    width: 10px;
+    height: 10px;
+    top: 240px;
+    left: 295px;
+    background:  rgb(34, 83, 83);
+    border-radius: 50%;
+    transform: rotate(-45deg);
+    z-index: 2;
+    animation-name: fading;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    
+}
+
+
+@keyframes fade {
+    0% {
+        top: 300px;
+    }
+    100% {
+        top: 400px;
+        opacity: 0;
+    }
+}
+
+@keyframes fading {
+    0% {
+        top: 300px;
+        right: 100px;
+    }
+    100% {
+        top: 400px;
+        opacity: 0;
+    }
+}
+
+.sandBottom {
+    position: absolute;
+    opacity: 0.2;
+    width: 150px;
+    height: 150px;
+    bottom: 80px;
+    left: 224px;
+    background: rgb(12, 31, 31);
+    border-radius: 5% 90% 5% 65%;
+    transform: rotate(135deg);
+    z-index: 2;
+}
+
+
